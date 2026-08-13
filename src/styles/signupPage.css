@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+.signup-page {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.signup-page h2 {
+  margin-top: 0;
+}
+
+.signup-field {
+  margin-bottom: 14px;
+}
+
+.signup-field label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.signup-field input {
+  padding: 8px 10px;
+}
+
+.signup-button {
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.signup-login {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.signup-error {
+  color: red;
+  margin-bottom: 14px;
+}

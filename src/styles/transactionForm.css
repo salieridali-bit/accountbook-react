@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+}
+
+.transaction-form-page {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.transaction-form-page * {
+  box-sizing: border-box;
+}
+
+.transaction-form-card {
+  width: 100%;
+  max-width: 620px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+  padding: 36px;
+}
+
+.transaction-form-header {
+  margin-bottom: 30px;
+}
+
+.transaction-form-badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.transaction-form-header h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #111827;
+}
+
+.transaction-form-desc {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.transaction-form-field {
+  margin-bottom: 20px;
+}
+
+.transaction-form-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.transaction-form-field input,
+.transaction-form-field select,
+.transaction-form-field textarea {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 15px 16px;
+  font-size: 16px;
+  outline: none;
+}
+
+.transaction-form-field input:focus,
+.transaction-form-field select:focus,
+.transaction-form-field textarea:focus {
+  border-color: #6366f1;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.transaction-form-field textarea {
+  resize: none;
+}
+
+.transaction-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.transaction-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.transaction-form-btn {
+  border: none;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.transaction-form-btn-cancel {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.transaction-form-btn-save {
+  background: #4f46e5;
+  color: white;
+}
+
+.transaction-form-btn-save:hover {
+  background: #4338ca;
+}
+
+.transaction-form-btn-cancel:hover {
+  background: #e5e7eb;
+}
+
+.transaction-form-error {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .transaction-form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

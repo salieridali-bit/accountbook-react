@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+}
+
+.category-page {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.category-page * {
+  box-sizing: border-box;
+}
+
+.category-box {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.category-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-add {
+  border: none;
+  text-decoration: none;
+  background: #222;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category-transactions {
+  background: #16a34a;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.category-name {
+  font-weight: bold;
+}
+
+.category-edit {
+  border: none;
+  text-decoration: none;
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category-delete {
+  border: none;
+  text-decoration: none;
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-left: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category-error {
+  margin-top: 16px;
+  padding: 12px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.category-empty {
+  margin-top: 20px;
+  color: #6b7280;
+  text-align: center;
+}
