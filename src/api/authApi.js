@@ -4,7 +4,7 @@ export async function login(username, password) {
   const response = await fetch(`${API_URL}/api/users/login`, {
     method: "POST",
 
-    // Spring의 JESSIONID 쿠키를 주고받기 위해 필요
+    // Spring의 JSESSIONID 쿠키를 주고받기 위해 필요
     credentials: "include",
 
     headers: {
@@ -25,8 +25,9 @@ export async function login(username, password) {
 
   return data;
 }
+
 export async function getMe() {
-  const response = await fetch("http://localhost:8080/api/users/me", {
+  const response = await fetch(`${API_URL}/api/users/me`, {
     credentials: "include",
   });
 
@@ -38,7 +39,7 @@ export async function getMe() {
 }
 
 export async function logout() {
-  const response = await fetch("http://localhost:8080/api/users/logout", {
+  const response = await fetch(`${API_URL}/api/users/logout`, {
     method: "POST",
     credentials: "include",
   });
