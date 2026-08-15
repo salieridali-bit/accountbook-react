@@ -17,19 +17,14 @@ import ProtectedRoute from "./components/ProtectedRoute";
 export default function App() {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <ProtectedRoute>
-            <HomePage />
-          </ProtectedRoute>
-        }
-      />
+      {/* 홈은 바로 보여줌 */}
+      <Route path="/" element={<HomePage />} />
 
       <Route path="/login" element={<LoginPage />} />
 
       <Route path="/signup" element={<SignupPage />} />
 
+      {/* 카테고리 */}
       <Route
         path="/categories"
         element={
@@ -57,6 +52,7 @@ export default function App() {
         }
       />
 
+      {/* 거래내역 */}
       <Route
         path="/transactions"
         element={

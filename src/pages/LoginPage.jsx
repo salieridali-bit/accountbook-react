@@ -26,7 +26,8 @@ export default function LoginPage() {
     try {
       await login(username, password);
 
-      navigate("/");
+      // 로그인 성공 후 실제 가계부 화면으로 이동
+      navigate("/transactions");
     } catch (error) {
       console.error(error);
 
